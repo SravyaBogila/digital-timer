@@ -72,7 +72,7 @@ class DigitalTimer extends Component {
   }
 
   incrementTimeElapsedInSeconds = () => {
-    const {timerLimitInMinutes, timerElapsedInSeconds} = this.state
+    const {timerLimitInMinutes, timeElapsedInSeconds} = this.state
     const isTimerCompleted = timeElapsedInSeconds === timerLimitInMinutes * 60
 
     if (isTimerCompleted) {
